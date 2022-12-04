@@ -20,10 +20,10 @@ with open('aoc_2022_1_input.txt', encoding='utf-8') as f:
 def count_cals(supplies):
     highest_calories = 0
 
-    for set in supplies:
+    for snacks in supplies:
         count = 0
 
-        for item in set:
+        for item in snacks:
             count += item
         
         if count > highest_calories:
@@ -39,10 +39,10 @@ print(count_cals(inp))
 def top_three_calories(supplies):
     total_calories = []
 
-    for set in supplies:
+    for snacks in supplies:
         count = 0
 
-        for item in set:
+        for item in snacks:
             count += item
         
         total_calories.append(count)
